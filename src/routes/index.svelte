@@ -5,15 +5,7 @@
 
 <div class="modals">
 
-	<Modal1/>
-	<Modal1/>
-	<Modal1/>
-	<Modal1/>
-	<Modal1/>
-	<Modal1/>
-	<Modal1/>
-	<Modal1/>
-	<Modal1/>
+	<ModalSprite/>
 	<!-- <Modal2/> -->
 	<!-- <Modal3/> -->
 
@@ -26,7 +18,7 @@
 
 	import IntersectionObserver from '@society/svelte/IntersectionObserver.svelte'
 
-	import Modal1 from '@society/svelte/Modal1.svelte'
+	import ModalSprite from '@society/svelte/ModalSprite.svelte'
 	// import Modal2 from '@society/svelte/Modal2.svelte'
 	// import Modal3 from '@society/svelte/Modal3.svelte'
 
