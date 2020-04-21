@@ -1,13 +1,21 @@
-<!-- DEV ONLY -->
-<!-- {#if Refresh}<svelte:component this={Refresh}/>{/if} -->
+<!-- <svelte:component this={Refresh}/> -->
+<!-- Get rid of those annoying warning signals -->{segment}
 
 <slot></slot>
 
 <script>
-	// // DEV ONLY:
-	// import { onMount } from 'svelte'
+	export let segment = ''
+
+	import { onMount } from 'svelte'
+
+	let html
 	// let Refresh = false
-	// onMount(async () => Refresh = (await import('./_refresh.svelte')).default)
+	onMount(async () => {
+		// Refresh = (await import('./_refresh.svelte')).default
+
+		// this delay removes the `preload` class from the `html` element
+		setTimeout(() => html = document.querySelector('html').classList.remove('preloaded'), 150)
+	})
 </script>
 
 <!-- <style type="text/scss"></style> -->
