@@ -4,34 +4,57 @@
 <Panel/>
 
 <div class="chapters">
-	<div class="chapter chapter-1">
-	</div>
+	<Chapter1/>
 
-	<div class="chapter chapter-2">
-	</div>
+	<IntersectionObserver let:elem let:intersecting>
+		<div class="chapter chapter-2">
+			<h2>Content</h2>
+		</div>
+	</IntersectionObserver>
 
-	<div class="chapter chapter-3">
-	</div>
+	<IntersectionObserver let:elem let:intersecting>
+		<div class="chapter chapter-3">
+			<h2>Content</h2>
+		</div>
+	</IntersectionObserver>
 
-	<div class="chapter chapter-4">
-	</div>
+	<IntersectionObserver let:elem let:intersecting>
+		<div class="chapter chapter-4">
+			<h2>Content</h2>
+		</div>
+	</IntersectionObserver>
 
-	<div class="chapter chapter-5">
-	</div>
+	<IntersectionObserver let:elem let:intersecting>
+		<div class="chapter chapter-5">
+			<h2>Content</h2>
+		</div>
+	</IntersectionObserver>
 
-	<div class="chapter chapter-6">
-	</div>
+	<IntersectionObserver let:elem let:intersecting>
+		<div class="chapter chapter-6">
+			<h2>Content</h2>
+		</div>
+	</IntersectionObserver>
 
-	<div class="chapter chapter-7">
-	</div>
+	<IntersectionObserver let:elem let:intersecting>
+		<div class="chapter chapter-7">
+			<h2>Content</h2>
+		</div>
+	</IntersectionObserver>
 
-	<div class="chapter chapter-8">
-	</div>
+	<IntersectionObserver let:elem let:intersecting>
+		<div class="chapter chapter-8">
+			<h2>Content</h2>
+		</div>
+	</IntersectionObserver>
 </div>
 
 <script>
-	import Panel from '@society/svelte/layout/Panel.svelte'
 	import { story_scroll, view_height } from '@society/js/stores.js'
+
+	import Panel from '@society/svelte/layout/Panel.svelte'
+	import IntersectionObserver from '@society/svelte/IntersectionObserver.svelte'
+	import Chapter1 from '@society/svelte/Chapter1.svelte'
 
 	let scroll_y = 0
 	$: story_scroll.set(scroll_y)
@@ -39,27 +62,12 @@
 
 <style type="text/scss">
 	.chapters {
+		padding-top: 100rem;
 		width: 100%;
 	}
 	.chapter {
-		position: relative;
-		padding: 50rem;
 		width: 100%;
-		height: 100vh;
-		z-index: 1;
+		padding: 50rem;
+		color: white;
 	}
-	// .chapter-content {
-	// 	position: relative;
-	// 	margin: 0 auto;
-	// 	// padding: 0 40rem;
-	// 	width: 100%;
-	// 	max-width: $layout-width;
-	// 	z-index: 2;
-	// 	// @media (--small-down) { padding: 0 20rem; }
-	// }
-	// https://css-tricks.com/full-width-containers-limited-width-parents/
-	// https://codepen.io/tigt/post/bust-elements-out-of-containers-with-one-line-of-css
-	// .full-width {
-	// 	margin: 0 calc(50% - 50vw);
-	// }
 </style>
