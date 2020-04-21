@@ -3,19 +3,19 @@
 
 <Panel/>
 
-<div class="chapters">
+<div class="modals">
 
-	<Chapter1/>
-	<Chapter1/>
-	<Chapter1/>
-	<Chapter1/>
-	<Chapter1/>
-	<Chapter1/>
-	<Chapter1/>
-	<Chapter1/>
-	<Chapter1/>
-	<!-- <Chapter2/> -->
-	<!-- <Chapter3/> -->
+	<Modal1/>
+	<Modal1/>
+	<Modal1/>
+	<Modal1/>
+	<Modal1/>
+	<Modal1/>
+	<Modal1/>
+	<Modal1/>
+	<Modal1/>
+	<!-- <Modal2/> -->
+	<!-- <Modal3/> -->
 
 </div>
 
@@ -26,9 +26,9 @@
 
 	import IntersectionObserver from '@society/svelte/IntersectionObserver.svelte'
 
-	import Chapter1 from '@society/svelte/Chapter1.svelte'
-	// import Chapter2 from '@society/svelte/Chapter2.svelte'
-	// import Chapter3 from '@society/svelte/Chapter3.svelte'
+	import Modal1 from '@society/svelte/Modal1.svelte'
+	// import Modal2 from '@society/svelte/Modal2.svelte'
+	// import Modal3 from '@society/svelte/Modal3.svelte'
 
 	let scrollY = 0
 	$: story_scroll.set(scrollY)
@@ -38,12 +38,12 @@
 </script>
 
 <style type="text/scss">
-	.chapters {
+	.modals {
 		padding-bottom: 100rem;
 		width: 100%;
 	}
 	:global {
-		.chapter {
+		.modal {
 			position: relative;
 			overflow: hidden;
 			display: flex;

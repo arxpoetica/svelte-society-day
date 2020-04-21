@@ -3,7 +3,7 @@
 .esm-cache
 .env
 .env.*
-/_hidden
+_hidden
 /src/routes/_refresh.svelte
 /.vscode
 
