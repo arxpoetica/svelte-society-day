@@ -5,9 +5,11 @@
 
 <div class="modals">
 
+	<Modal2/>
+	<Modal3/>
 	<ModalSprite/>
-	<!-- <Modal2/> -->
-	<!-- <Modal3/> -->
+	<Modal3/>
+	<Modal3/>
 
 </div>
 
@@ -19,8 +21,8 @@
 	import IntersectionObserver from '@society/svelte/IntersectionObserver.svelte'
 
 	import ModalSprite from '@society/svelte/ModalSprite.svelte'
-	// import Modal2 from '@society/svelte/Modal2.svelte'
-	// import Modal3 from '@society/svelte/Modal3.svelte'
+	import Modal2 from '@society/svelte/Modal2.svelte'
+	import Modal3 from '@society/svelte/Modal3.svelte'
 
 	let scrollY = 0
 	$: story_scroll.set(scrollY)
