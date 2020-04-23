@@ -1,15 +1,14 @@
 <svelte:window bind:scrollY bind:innerHeight/>
-<svelte:head><title>Svelte Society Day - Home</title></svelte:head>
+<svelte:head><title>Svelte Society Day - Slides</title></svelte:head>
 
-<Panel/>
+<Panel info={false}/>
 
 <div class="modals">
 
-	<Modal2/>
-	<Modal3/>
-	<ModalSprite/>
-	<Modal3/>
-	<Modal3/>
+	<Slide1/>
+	<Slide2/>
+	<Slide3/>
+	<!-- history-cave-paintings.jps -->
 
 </div>
 
@@ -17,10 +16,9 @@
 	import { story_scroll, view_height } from '@society/js/stores.js'
 
 	import Panel from '@society/svelte/layout/Panel.svelte'
-
-	import ModalSprite from '@society/svelte/ModalSprite.svelte'
-	import Modal2 from '@society/svelte/Modal2.svelte'
-	import Modal3 from '@society/svelte/Modal3.svelte'
+	import Slide1 from '@society/svelte/slides/Slide1.svelte'
+	import Slide2 from '@society/svelte/slides/Slide2.svelte'
+	import Slide3 from '@society/svelte/slides/Slide3.svelte'
 
 	let scrollY = 0
 	$: story_scroll.set(scrollY)
@@ -33,6 +31,7 @@
 	.modals {
 		padding-bottom: 100rem;
 		width: 100%;
+		color: white;
 	}
 	:global {
 		.modal {

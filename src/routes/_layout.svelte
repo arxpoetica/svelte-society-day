@@ -1,5 +1,6 @@
 <!-- <svelte:component this={Refresh}/> -->
-<!-- Get rid of those annoying warning signals -->{segment}
+<!-- Get rid of those annoying warning signals -->
+<div class="ghost">{segment}</div>
 
 <slot></slot>
 
