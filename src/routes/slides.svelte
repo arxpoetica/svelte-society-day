@@ -7,9 +7,11 @@
 
 	<Slide1/>
 	<Slide2/>
+	<Slide3Title/>
 	<Slide3/>
 	<!-- history-cave-paintings.jps -->
 
+	<Slide2/>
 </div>
 
 <script>
@@ -18,6 +20,7 @@
 	import Panel from '@society/svelte/layout/Panel.svelte'
 	import Slide1 from '@society/svelte/slides/Slide1.svelte'
 	import Slide2 from '@society/svelte/slides/Slide2.svelte'
+	import Slide3Title from '@society/svelte/slides/Slide3-title.svelte'
 	import Slide3 from '@society/svelte/slides/Slide3.svelte'
 
 	let scrollY = 0
@@ -31,6 +34,7 @@
 	.modals {
 		padding-bottom: 100rem;
 		width: 100%;
+		background-color: black;
 		color: white;
 	}
 	:global {
