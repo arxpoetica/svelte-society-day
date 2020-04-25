@@ -5,8 +5,8 @@
 
 <div class="modals">
 	<ModalBlank/>
-	<!-- <ModalSprite/> -->
-	<!-- <ModalBlank/> -->
+	<ModalSprite/>
+	<ModalBlank/>
 </div>
 
 <script>
