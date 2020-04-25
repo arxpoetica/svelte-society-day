@@ -4,14 +4,12 @@
 <Panel info={false}/>
 
 <div class="modals">
-
 	<Slide1/>
 	<Slide2/>
 	<Slide3Title/>
 	<Slide3/>
-	<!-- history-cave-paintings.jps -->
-
-	<Slide2/>
+	<Slide4/>
+	<Slide5/>
 </div>
 
 <script>
@@ -22,6 +20,8 @@
 	import Slide2 from '@society/svelte/slides/Slide2.svelte'
 	import Slide3Title from '@society/svelte/slides/Slide3-title.svelte'
 	import Slide3 from '@society/svelte/slides/Slide3.svelte'
+	import Slide4 from '@society/svelte/slides/Slide4.svelte'
+	import Slide5 from '@society/svelte/slides/Slide5.svelte'
 
 	let scrollY = 0
 	$: story_scroll.set(scrollY)

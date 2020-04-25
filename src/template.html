@@ -22,6 +22,11 @@
 	<body>
 		<div id="sapper">%sapper.html%</div>
 		<div class="yavascript">
+			<script src="https://www.youtube.com/iframe_api"></script>
+			<script>
+				function set_youtube_ready() { setTimeout(() => window.youtube_ready ? window.youtube_ready.set(true) : set_youtube_ready(), 1) }
+				function onYouTubeIframeAPIReady() { set_youtube_ready() }
+			</script>
 			%sapper.scripts%
 		</div>
 	</body>
