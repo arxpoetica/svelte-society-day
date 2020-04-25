@@ -10,6 +10,8 @@
 	<Slide3/>
 	<Slide4/>
 	<Slide5/>
+	<Slide6 empty={true}/>
+	<Slide6/>
 </div>
 
 <script>
@@ -22,6 +24,7 @@
 	import Slide3 from '@society/svelte/slides/Slide3.svelte'
 	import Slide4 from '@society/svelte/slides/Slide4.svelte'
 	import Slide5 from '@society/svelte/slides/Slide5.svelte'
+	import Slide6 from '@society/svelte/slides/Slide6.svelte'
 
 	let scrollY = 0
 	$: story_scroll.set(scrollY)

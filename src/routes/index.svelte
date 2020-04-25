@@ -4,13 +4,9 @@
 <Panel/>
 
 <div class="modals">
-
-	<Modal2/>
-	<Modal3/>
+	<ModalBlank/>
 	<ModalSprite/>
-	<Modal3/>
-	<Modal3/>
-
+	<ModalBlank/>
 </div>
 
 <script>
@@ -19,8 +15,7 @@
 	import Panel from '@society/svelte/layout/Panel.svelte'
 
 	import ModalSprite from '@society/svelte/ModalSprite.svelte'
-	import Modal2 from '@society/svelte/Modal2.svelte'
-	import Modal3 from '@society/svelte/Modal3.svelte'
+	import ModalBlank from '@society/svelte/ModalBlank.svelte'
 
 	let scrollY = 0
 	$: story_scroll.set(scrollY)

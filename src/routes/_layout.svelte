@@ -1,4 +1,4 @@
-<!-- <svelte:component this={Refresh}/> -->
+<svelte:component this={Refresh}/>
 <!-- Get rid of those annoying warning signals -->
 <div class="ghost">{segment}</div>
 
@@ -11,9 +11,10 @@
 	import { youtube_ready } from '@society/js/stores.js'
 
 	let html
-	// let Refresh = false
+	let Refresh = false
 	onMount(async () => {
-		// Refresh = (await import('./_refresh.svelte')).default
+		Refresh = (await import('./_refresh.svelte')).default
+
 		window.youtube_ready = youtube_ready
 
 		// this delay removes the `preload` class from the `html` element
